@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="TittleScreenTinkyWinky.png">
+	<!-- Created with Adobe Animate version 19.2.0.405 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="TinkyWinky0000" x="10" y="10" width="815" height="994" frameX="-11" frameY="0" frameWidth="837" frameHeight="994"/>
+	<SubTexture name="TinkyWinky0001" x="10" y="10" width="815" height="994" frameX="-11" frameY="0" frameWidth="837" frameHeight="994"/>
+	<SubTexture name="TinkyWinky0002" x="835" y="10" width="815" height="993" frameX="-11" frameY="-1" frameWidth="837" frameHeight="994"/>
+	<SubTexture name="TinkyWinky0003" x="835" y="10" width="815" height="993" frameX="-11" frameY="-1" frameWidth="837" frameHeight="994"/>
+	<SubTexture name="TinkyWinky0004" x="1660" y="10" width="819" height="992" frameX="-9" frameY="-2" frameWidth="837" frameHeight="994"/>
+	<SubTexture name="TinkyWinky0005" x="1660" y="10" width="819" height="992" frameX="-9" frameY="-2" frameWidth="837" frameHeight="994"/>
+	<SubTexture name="TinkyWinky0006" x="2489" y="10" width="823" height="990" frameX="-7" frameY="-4" frameWidth="837" frameHeight="994"/>
+	<SubTexture name="TinkyWinky0007" x="2489" y="10" width="823" height="990" frameX="-7" frameY="-4" frameWidth="837" frameHeight="994"/>
+	<SubTexture name="TinkyWinky0008" x="10" y="1014" width="829" height="988" frameX="-4" frameY="-6" frameWidth="837" frameHeight="994"/>
+	<SubTexture name="TinkyWinky0009" x="10" y="1014" width="829" height="988" frameX="-4" frameY="-6" frameWidth="837" frameHeight="994"/>
+	<SubTexture name="TinkyWinky0010" x="849" y="1014" width="833" height="986" frameX="-2" frameY="-8" frameWidth="837" frameHeight="994"/>
+	<SubTexture name="TinkyWinky0011" x="849" y="1014" width="833" height="986" frameX="-2" frameY="-8" frameWidth="837" frameHeight="994"/>
+	<SubTexture name="TinkyWinky0012" x="1692" y="1014" width="835" height="985" frameX="-1" frameY="-9" frameWidth="837" frameHeight="994"/>
+	<SubTexture name="TinkyWinky0013" x="1692" y="1014" width="835" height="985" frameX="-1" frameY="-9" frameWidth="837" frameHeight="994"/>
+	<SubTexture name="TinkyWinky0014" x="2537" y="1014" width="837" height="985" frameX="0" frameY="-9" frameWidth="837" frameHeight="994"/>
+	<SubTexture name="TinkyWinky0015" x="2537" y="1014" width="837" height="985" frameX="0" frameY="-9" frameWidth="837" frameHeight="994"/>
+	<SubTexture name="TinkyWinky0016" x="1692" y="1014" width="835" height="985" frameX="0" frameY="-10" frameWidth="837" frameHeight="994"/>
+	<SubTexture name="TinkyWinky0017" x="1692" y="1014" width="835" height="985" frameX="0" frameY="-10" frameWidth="837" frameHeight="994"/>
+	<SubTexture name="TinkyWinky0018" x="10" y="2012" width="833" height="985" frameX="-2" frameY="-9" frameWidth="837" frameHeight="994"/>
+	<SubTexture name="TinkyWinky0019" x="10" y="2012" width="833" height="985" frameX="-2" frameY="-9" frameWidth="837" frameHeight="994"/>
+	<SubTexture name="TinkyWinky0020" x="853" y="2012" width="829" height="987" frameX="-4" frameY="-7" frameWidth="837" frameHeight="994"/>
+	<SubTexture name="TinkyWinky0021" x="853" y="2012" width="829" height="987" frameX="-4" frameY="-7" frameWidth="837" frameHeight="994"/>
+	<SubTexture name="TinkyWinky0022" x="1692" y="2012" width="825" height="989" frameX="-6" frameY="-5" frameWidth="837" frameHeight="994"/>
+	<SubTexture name="TinkyWinky0023" x="1692" y="2012" width="825" height="989" frameX="-6" frameY="-5" frameWidth="837" frameHeight="994"/>
+	<SubTexture name="TinkyWinky0024" x="2527" y="2012" width="819" height="991" frameX="-9" frameY="-3" frameWidth="837" frameHeight="994"/>
+	<SubTexture name="TinkyWinky0025" x="2527" y="2012" width="819" height="991" frameX="-9" frameY="-3" frameWidth="837" frameHeight="994"/>
+	<SubTexture name="TinkyWinky0026" x="10" y="3013" width="817" height="993" frameX="-10" frameY="-1" frameWidth="837" frameHeight="994"/>
+	<SubTexture name="TinkyWinky0027" x="10" y="3013" width="817" height="993" frameX="-10" frameY="-1" frameWidth="837" frameHeight="994"/>
+	<SubTexture name="TinkyWinky0028" x="837" y="3013" width="815" height="993" frameX="-11" frameY="-1" frameWidth="837" frameHeight="994"/>
+	<SubTexture name="TinkyWinky0029" x="10" y="10" width="815" height="994" frameX="-11" frameY="0" frameWidth="837" frameHeight="994"/>
+</TextureAtlas>

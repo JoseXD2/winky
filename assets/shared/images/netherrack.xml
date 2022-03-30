@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="intenseoverlay.png">
+	<!-- Created with Adobe Animate version 19.2.0.405 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="netherrackclear0" x="0" y="0" width="157" height="153"/>
+	<SubTexture name="netherrackvis0" x="157" y="0" width="157" height="153"/>
+</TextureAtlas>

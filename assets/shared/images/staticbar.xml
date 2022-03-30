@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="staticbar.png">
+	<!-- Created with Adobe Animate version 21.0.5.40714 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="staticbar0" x="0" y="0" width="601" height="19"/>
+	<SubTexture name="staticbar1" x="0" y="19" width="601" height="19"/>
+	<SubTexture name="staticbar2" x="0" y="38" width="601" height="19"/>
+	<SubTexture name="staticbar3" x="0" y="57" width="601" height="19"/>
+</TextureAtlas>

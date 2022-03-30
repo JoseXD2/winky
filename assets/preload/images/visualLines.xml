@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="visualLines.png">
+	<!-- Created with Adobe Animate version 19.2.0.405 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="visualLines0000" x="10" y="10" width="1280" height="720"/>
+	<SubTexture name="visualLines0001" x="10" y="10" width="1280" height="720"/>
+	<SubTexture name="visualLines0002" x="10" y="10" width="1280" height="720"/>
+	<SubTexture name="visualLines0003" x="10" y="10" width="1280" height="720"/>
+	<SubTexture name="visualLines0004" x="10" y="740" width="1280" height="720"/>
+	<SubTexture name="visualLines0005" x="10" y="740" width="1280" height="720"/>
+	<SubTexture name="visualLines0006" x="10" y="740" width="1280" height="720"/>
+	<SubTexture name="visualLines0007" x="10" y="740" width="1280" height="720"/>
+	<SubTexture name="visualLines0008" x="10" y="1470" width="1280" height="720"/>
+	<SubTexture name="visualLines0009" x="10" y="1470" width="1280" height="720"/>
+	<SubTexture name="visualLines0010" x="10" y="1470" width="1280" height="720"/>
+	<SubTexture name="visualLines0011" x="10" y="1470" width="1280" height="720"/>
+</TextureAtlas>
