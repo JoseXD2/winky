@@ -18,7 +18,6 @@ import flixel.text.FlxText;
 import flixel.tweens.FlxEase;
 import flixel.tweens.FlxTween;
 import flixel.util.FlxColor;
-import io.newgrounds.NG;
 import lime.app.Application;
 import lime.utils.Assets;
 import flixel.math.FlxMath;
@@ -34,24 +33,15 @@ class KeyBindMenu extends FlxSubState
     var keyTextDisplay:FlxText;
     var keyWarning:FlxText;
     var warningTween:FlxTween;
-    var keyText:Array<String> = ["LEFT", "DOWN", "UP", "RIGHT","8KEY LEFT1", "8KEY DOWN1", "8KEYUP1", "8KEY RIGHT","8KEY LEFT2", "8KEY DOWN2", "8KEYUP2", "8KEY RIGHT2"];
-    var keyText2:Array<String> = ["LEFT", "DOWN", "UP", "RIGHT","A", "S", "W", "D","J","K","I","L"];
-    var defaultKeys:Array<String> = ["LEFT", "DOWN", "UP", "RIGHT","A", "S", "W", "D","J","K","I","L"];
+    var keyText:Array<String> = ["LEFT", "DOWN", "UP", "RIGHT"];
+    var defaultKeys:Array<String> = ["A", "S", "W", "D", "R"];
     var curSelected:Int = 0;
 
     var keys:Array<String> = [FlxG.save.data.leftBind,
                               FlxG.save.data.downBind,
                               FlxG.save.data.upBind,
-                              FlxG.save.data.rightBind,
-                              (FlxG.save.data.eleftBind != null ? FlxG.save.data.eleftBind : "A"),    
-                              (FlxG.save.data.edownBind != null ? FlxG.save.data.edownBind : "S"),
-                              (FlxG.save.data.eupBind != null ? FlxG.save.data.eupBind : "W"),
-                              (FlxG.save.data.erightBind != null ? FlxG.save.data.erightBind : "D"),
-                              (FlxG.save.data.seleftBind != null ? FlxG.save.data.seleftBind : "J"),    
-                              (FlxG.save.data.sedownBind != null ? FlxG.save.data.sedownBind : "K"),
-                              (FlxG.save.data.seupBind != null ? FlxG.save.data.seupBind : "I"),
-                              (FlxG.save.data.serightBind != null ? FlxG.save.data.serightBind : "L")
-                              ];
+                              FlxG.save.data.rightBind];
+
     var tempKey:String = "";
     var blacklist:Array<String> = ["ESCAPE", "ENTER", "BACKSPACE", "SPACE"];
 
@@ -83,7 +73,7 @@ class KeyBindMenu extends FlxSubState
         blackBox = new FlxSprite(0,0).makeGraphic(FlxG.width,FlxG.height,FlxColor.BLACK);
         add(blackBox);
 
-        infoText = new FlxText(-10, 620, 1280, "(Escape to save, backspace to leave without saving)", 72);
+        infoText = new FlxText(-10, 580, 1280, "(Escape to save, backspace to leave without saving)", 72);
 		infoText.scrollFactor.set(0, 0);
 		infoText.setFormat("VCR OSD Mono", 24, FlxColor.WHITE, FlxTextAlign.CENTER, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
 		infoText.borderSize = 2;
@@ -179,10 +169,10 @@ class KeyBindMenu extends FlxSubState
 
         keyTextDisplay.text = "\n\n";
 
-        for(i in 0...12){
+        for(i in 0...4){
 
             var textStart = (i == curSelected) ? "> " : "  ";
-            keyTextDisplay.text += textStart + keyText[i] + ": " + ((keys[i] != keyText[i]) ? (keys[i] + " / ") : "" ) + keyText2[i] + " KEY\n";
+            keyTextDisplay.text += textStart + keyText[i] + ": " + ((keys[i] != keyText[i]) ? (keys[i] + " / ") : "" ) + keyText[i] + " ARROW\n";
 
         }
 
@@ -196,14 +186,6 @@ class KeyBindMenu extends FlxSubState
         FlxG.save.data.downBind = keys[1];
         FlxG.save.data.leftBind = keys[0];
         FlxG.save.data.rightBind = keys[3];
-        FlxG.save.data.eupBind = keys[6];
-        FlxG.save.data.edownBind = keys[5];
-        FlxG.save.data.eleftBind = keys[4];
-        FlxG.save.data.erightBind = keys[7];
-        FlxG.save.data.seupBind = keys[10];
-        FlxG.save.data.sedownBind = keys[9];
-        FlxG.save.data.seleftBind = keys[8];
-        FlxG.save.data.serightBind = keys[11];
 
         FlxG.save.flush();
 
@@ -227,8 +209,7 @@ class KeyBindMenu extends FlxSubState
         save();
 
         OptionsMenu.instance.acceptInput = true;
-        trace('ee eup' + FlxG.save.data.eupBind); 
-        trace('ee edown' + FlxG.save.data.edownBind);
+
         FlxTween.tween(keyTextDisplay, {alpha: 0}, 1, {ease: FlxEase.expoInOut});
         FlxTween.tween(blackBox, {alpha: 0}, 1.1, {ease: FlxEase.expoInOut, onComplete: function(flx:FlxTween){close();}});
         FlxTween.tween(infoText, {alpha: 0}, 1, {ease: FlxEase.expoInOut});
@@ -272,9 +253,9 @@ class KeyBindMenu extends FlxSubState
     {
         curSelected += _amount;
                 
-        if (curSelected > 11)
+        if (curSelected > 3)
             curSelected = 0;
         if (curSelected < 0)
-            curSelected = 11;
+            curSelected = 3;
     }
 }

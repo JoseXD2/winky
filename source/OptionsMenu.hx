@@ -22,13 +22,12 @@ class OptionsMenu extends MusicBeatState
 
 	var selector:FlxText;
 	var curSelected:Int = 0;
-	var gameplaytext = "Gameplay";
-	var warning:Bool = false;
+
 	var options:Array<OptionCategory> = [
 		new OptionCategory("Gameplay", [
 			new DFJKOption(controls),
 			new DownscrollOption("Change the layout of the strumline."),
-			new GhostTapOption("Disables imagery relating to suicide."),
+			new GhostTapOption("Ghost Tapping is when you tap a direction and it doesn't give you a miss."),
 			new Judgement("Customize your Hit Timings (LEFT or RIGHT)"),
 			#if desktop
 			new FPSCapOption("Cap your FPS"),
@@ -60,6 +59,11 @@ class OptionsMenu extends MusicBeatState
 			new FlashingLightsOption("Toggle flashing lights that can cause epileptic seizures and strain."),
 			new WatermarkOption("Enable and disable all watermarks from the engine."),
 			new BotPlay("Showcase your charts and mods with autoplay.")
+		]),
+
+		new OptionCategory("Mobile settings", [
+			new CustomControls("edit a control"),
+			new About("about android port")
 		])
 		
 	];
@@ -111,6 +115,10 @@ class OptionsMenu extends MusicBeatState
 
 		FlxTween.tween(versionShit,{y: FlxG.height - 18},2,{ease: FlxEase.elasticInOut});
 		FlxTween.tween(blackBorder,{y: FlxG.height - 18},2, {ease: FlxEase.elasticInOut});
+
+		#if mobileC
+		addVirtualPad(UP_DOWN, A_B);
+		#end
 
 		super.create();
 	}

@@ -77,16 +77,22 @@ class Main extends Sprite
 		initialState = TitleState;
 		#end
 
+		#if mobile
+		gameWidth = 1280;
+		gameHeight = 720;
+		zoom = 1;
+		#end
+
 		game = new FlxGame(gameWidth, gameHeight, initialState, zoom, framerate, framerate, skipSplash, startFullscreen);
 
 		addChild(game);
 
-		#if !mobile
+		//#if !mobile
 		fpsCounter = new FPS(10, 3, 0xFFFFFF);
 		addChild(fpsCounter);
 		toggleFPS(FlxG.save.data.fps);
 
-		#end
+		//#end
 	}
 
 	var game:FlxGame;
