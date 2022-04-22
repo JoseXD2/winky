@@ -74,7 +74,7 @@ class Main extends Sprite
 		}
 
 		#if !debug
-		initialState = TitleState;
+	//	initialState = TitleState;
 		#end
 
 		#if mobile
