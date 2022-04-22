@@ -183,8 +183,7 @@ class FreeplayState extends MusicBeatState
 
 		var upP = controls.UP_P;
 		var downP = controls.DOWN_P;
-		var eupP = controls.EUP_P;
-		var edownP = controls.EDOWN_P;
+
 		var accepted = controls.ACCEPT;
 
 		if (upP || eupP)
