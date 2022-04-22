@@ -186,11 +186,11 @@ class FreeplayState extends MusicBeatState
 
 		var accepted = controls.ACCEPT;
 
-		if (upP || eupP)
+		if (upP)
 		{
 			changeSelection(-1);
 		}
-		if (downP || edownP)
+		if (downP)
 		{
 			changeSelection(1);
 		}
