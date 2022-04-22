@@ -12,7 +12,7 @@ import flixel.tweens.FlxEase;
 import flixel.tweens.FlxTween;
 import flixel.util.FlxColor;
 import flixel.util.FlxTimer;
-import io.newgrounds.NG;
+//import io.newgrounds.NG;
 import lime.app.Application;
 
 #if windows
@@ -44,7 +44,9 @@ class DisclaimerScreen extends MusicBeatState
 		
 	}
 	
-	
+	#if mobileC
+	addVirtualPad(NONE, A_B);
+	#end
 	override function update(elapsed:Float) 
 	{
 		super.update(elapsed);
