@@ -179,7 +179,11 @@ class StoryMenuState extends MusicBeatState
 		updateText();
 
 		trace("Line 165");
-
+		
+                #if mobileC
+		addVirtualPad(FULL, A_B);
+		#end
+			
 		super.create();
 	}
 
@@ -206,29 +210,29 @@ class StoryMenuState extends MusicBeatState
 		{
 			if (!selectedWeek)
 			{
-				if (controls.UP_P || controls.EUP_P)
+				if (controls.UP_P)
 				{
 					changeWeek(-1);
 				}
 
-				if (controls.DOWN_P || controls.EDOWN_P)
+				if (controls.DOWN_P)
 				{
 					changeWeek(1);
 				}
 
-				if (controls.RIGHT || controls.ERIGHT)
+				if (controls.RIGHT)
 					rightArrow.animation.play('press')
 				else
 					rightArrow.animation.play('idle');
 
-				if (controls.LEFT || controls.ELEFT)
+				if (controls.LEFT)
 					leftArrow.animation.play('press');
 				else
 					leftArrow.animation.play('idle');
 
-				if (controls.RIGHT_P || controls.ERIGHT_P)
+				if (controls.RIGHT_P
 					changeDifficulty(1);
-				if (controls.LEFT_P || controls.ELEFT_P)
+				if (controls.LEFT_P
 					changeDifficulty(-1);
 			}
 
