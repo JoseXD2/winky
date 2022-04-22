@@ -12,7 +12,7 @@ import flixel.tweens.FlxEase;
 import flixel.tweens.FlxTween;
 import flixel.util.FlxColor;
 import flixel.util.FlxTimer;
-import io.newgrounds.NG;
+//import io.newgrounds.NG;
 import lime.app.Application;
 
 #if windows
@@ -166,13 +166,13 @@ class MainMenuState extends MusicBeatState
 
 		if (!selectedSomethin)
 		{
-			if (controls.UP_P || controls.EUP_P)
+			if (controls.UP_P
 			{
 				FlxG.sound.play(Paths.sound('scrollMenu'));
 				changeItem(-1);
 			}
 
-			if (controls.DOWN_P || controls.EDOWN_P)
+			if (controls.DOWN_P
 			{
 				FlxG.sound.play(Paths.sound('scrollMenu'));
 				changeItem(1);
