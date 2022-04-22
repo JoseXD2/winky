@@ -47,6 +47,7 @@ class DisclaimerScreen extends MusicBeatState
 	#if mobileC
 	addVirtualPad(NONE, A_B);
 	#end
+		
 	override function update(elapsed:Float) 
 	{
 		super.update(elapsed);
