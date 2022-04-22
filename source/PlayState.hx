@@ -3003,37 +3003,17 @@ class PlayState extends MusicBeatState
 		if(SONG.noteStyle == 'eightnotes'){
 					  holdArray = [controls.ELEFT, controls.EDOWN, controls.EUP, controls.ERIGHT,controls.SELEFT, controls.SEDOWN, controls.SEUP, controls.SERIGHT];
 					  pressArray = [
-					controls.ELEFT_P,
-					controls.EDOWN_P,
-					controls.EUP_P,
-					controls.ERIGHT_P,
-					controls.SELEFT_P,
-					controls.SEDOWN_P,
-					controls.SEUP_P,
-					controls.SERIGHT_P
+					
 				];
 					 releaseArray= [
-					controls.ELEFT_R,
-					controls.EDOWN_R,
-					controls.EUP_R,
-					controls.ERIGHT_R,
-					controls.SELEFT_R,
-					controls.SEDOWN_R,
-					controls.SEUP_R,
-					controls.SERIGHT_R
+					
 				];
 		}else{		  holdArray = [controls.LEFT, controls.DOWN, controls.UP, controls.RIGHT];
 					  pressArray= [
-					controls.LEFT_P,
-					controls.DOWN_P,
-					controls.UP_P,
-					controls.RIGHT_P,
+					
 				];
 					 releaseArray = [
-					controls.LEFT_R,
-					controls.DOWN_R,
-					controls.UP_R,
-					controls.RIGHT_R,
+					
 				];}
 
 
