@@ -3001,14 +3001,14 @@ class PlayState extends MusicBeatState
 				var  pressArray:Array<Bool>;
 				var releaseArray:Array<Bool>;
 		if(SONG.noteStyle == 'eightnotes'){
-					  holdArray = [controls.ELEFT, controls.EDOWN, controls.EUP, controls.ERIGHT,controls.SELEFT, controls.SEDOWN, controls.SEUP, controls.SERIGHT];
+					  
 					  pressArray = [
 					
 				];
 					 releaseArray= [
 					
 				];
-		}else{		  holdArray = [controls.LEFT, controls.DOWN, controls.UP, controls.RIGHT];
+		}else{		  
 					  pressArray= [
 					
 				];
