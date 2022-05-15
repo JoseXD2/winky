@@ -203,23 +203,7 @@ class Character extends FlxSprite
 				addOffset("singDOWN", 0, -41);
 
 				playAnim('idle');
-			case 'tinkyg':
-				//shhh... dont tell srperez
-				tex = Paths.getSparrowAtlas('characters/Tinky_God', 'shared');
-				frames = tex;
-				animation.addByPrefix('idle', 'TinkyIdle00', 24);
-				animation.addByPrefix('singUP', 'TinkyUp00', 24);
-				animation.addByPrefix('singRIGHT', 'TinkyRight00', 24);
-				animation.addByPrefix('singDOWN', 'TinkyDown00', 24);
-				animation.addByPrefix('singLEFT', 'TinkyLeft00', 24);
 
-				addOffset('idle',0,0);
-				addOffset("singUP", 0, 86);
-				addOffset("singRIGHT", 0, -58);
-				addOffset("singLEFT", 79, -47);
-				addOffset("singDOWN", 0, -41);
-
-				playAnim('idle');
 			case 'tank':
 				tex = Paths.getSparrowAtlas('characters/TinkyTank', 'shared');
 				frames = tex;
